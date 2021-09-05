@@ -1,0 +1,7 @@
+@mixin border() {
+    border: 1px solid $colorNo5;
+}
+
+@mixin borderNone {
+    border: none;
+}

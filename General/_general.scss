@@ -1,0 +1,164 @@
+.div-general{
+    width: $w90;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    .div-logo{
+        width: $w100;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .div-enter{
+        width: $w100;
+        height: 220px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .div-enter1{
+            width: 80%;
+            height: 220px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $colorNo1;
+            .text-no1{
+                direction: rtl;
+                color: $colorNo2;
+                font-size: 13px;
+                padding: 0px 30px;
+                text-align: center;
+            }
+            .button-no1{
+                width: 176px;
+                height: 30px;
+                @include borderNone();
+                outline: none;
+                color: $colorNo2;
+                cursor: pointer;
+                font-size: 12px;
+                padding: 5px 10px;
+                bottom: 30px;
+                position: absolute;
+                background-color: $colorNo3;
+            }
+        }
+        .div-enter2{
+            width: 30%;
+            height: 220px;
+            direction: rtl;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: $colorNo4;
+            .input{
+                width: $w90;
+                height: 35px;
+                margin: 5px 0px;
+                padding: 0px 10px;
+                outline: none;
+                text-align: center;
+                @include border();
+            }
+            .input::placeholder{
+                font-size: 12px;
+                text-align: center;
+            }
+            .button-no2{
+                width: $w90;
+                height: 35px;
+                @include borderNone();
+                outline: none;
+                color: $colorNo2;
+                cursor: pointer;
+                margin: 5px;
+                font-size: 11px;
+                text-align: center;
+                background-color: $colorNo6;
+            }
+            .remember{
+                font-size: 12px;
+                margin-top: 30px;
+                text-decoration: none;
+                color: $colorNo7;
+            }
+            .remember:hover{
+                color: $colorNo8;
+            }
+        }
+    }
+    
+    .div-middlepart{
+        width: $w100;
+        height: auto;
+        margin: 20px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        .title{
+            width: 350px;
+            color: $colorNo9;
+            font-size: 14px;
+            padding: 0px 10px;
+            text-align: center;
+        }
+        hr{
+            width: $w100;
+            color: $colorNo10;
+        }
+    }
+    
+    .div-cards{
+        width: $w100;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .card{
+            width: 300px;
+            height: 180px;
+            margin: 5px 0px;
+            padding: 10px;
+            direction: rtl;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: $colorNo11;
+        }
+    }
+
+    .div-footer{
+        width: $w100;
+        height: auto;
+        margin: 30px;
+        direction: rtl;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .footer-ul{
+            width: 60%;
+            list-style-type: none;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .ul-a{
+                text-decoration: none;
+                color: $colorNo12;
+                .a-li{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
