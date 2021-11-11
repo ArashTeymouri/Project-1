@@ -1,0 +1,221 @@
+a{
+  text-decoration: none;
+}
+
+.div-general{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.div-logo{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.div-enter{
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-enter1{
+  width: 80%;
+  height: 220px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(91,91,255);
+}
+
+.text-no1{
+  direction: rtl;
+  color: white;
+  font-size: 13px;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+.button-no1{
+  width: 176px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 5px 10px;
+  bottom: 30px;
+  position: absolute;
+  background-color: rgb(1,1,170);
+}
+
+.div-enter2{
+  width: 30%;
+  height: 220px;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+}
+
+.input{
+  width: 90%;
+  height: 35px;
+  margin: 5px 0px;
+  padding: 0px 10px;
+  outline: none;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+.input::placeholder{
+  font-size: 12px;
+  text-align: center;
+}
+
+.button-no2{
+  width: 90%;
+  height: 35px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 11px;
+  text-align: center;
+  background-color: rgb(68,68,255);
+}
+
+.remember{
+  font-size: 12px;
+  margin-top: 30px;
+  text-decoration: none;
+  color: rgba(46,45,238,0.8);
+}
+
+.remember:hover{
+  color: rgba(46,45,238,1);;
+}
+
+.div-middlepart{
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  width: 350px;
+  color: blue;
+  font-size: 14px;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+hr{
+  width: 100%;
+  color: black;
+}
+
+.div-cards{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 300px;
+  height: 180px;
+  margin: 5px 0px;
+  padding: 10px;
+  direction: rtl;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(233,233,233);
+}
+
+.card a{
+  color: grey;
+  margin-right: 10px;
+}
+
+.card p:first-child{
+  color: blue;
+}
+
+.card p{
+  margin: 10px;
+}
+
+.div-footer{
+  width: 100%;
+  height: auto;
+  margin: 30px;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-ul{
+  width: 60%;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ul-a{
+  color: rgb(46, 46, 247);
+}
+
+.a-li{
+  font-size: 12px;
+}
+
+@media screen and (max-width: 900px){
+  .div-logo > img{
+      display: none;
+  }
+
+  .div-enter{
+      height: auto;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .div-enter1 , .div-enter2{
+      width: 100%;
+      height: 220px;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .div-footer{
+      display: none;
+  }    
+}

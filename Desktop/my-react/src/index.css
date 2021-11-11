@@ -1,0 +1,29 @@
+@font-face{
+  font-family: "iransans";
+  src: url("../src/assets/fonts/FontsFree-Net-ir_sans.ttf") format(truetype);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "iransans";
+}
+
+#root{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+html , body{
+  width: 100%;
+  height: auto;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
